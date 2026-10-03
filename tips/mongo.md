@@ -1,6 +1,6 @@
 # MongoDB
 ## Ordenar por data de criação
-```
+```javascript
 db.getCollection("NomeColecao")
     .find({}, {"campoDesejado" : 1, "_id" : 0})
     .sort({"createDate": -1});
@@ -10,7 +10,7 @@ db.getCollection("NomeColecao")
 `db.Colecao.countDocuments({});`
 
 ## Atualizar com replace no valor
-```
+```javascript
 db.Colecao.updateMany({}, [
   {
     $addFields:

@@ -1,6 +1,6 @@
 # SQL Server
 ## TRANSACTION SCRIPT
-```
+```sql
 USE databaseNameHere
 GO
 
@@ -20,7 +20,7 @@ Soon...
 ##VALUES clause
 
 ### SELECT with VALUES clause
-```
+```sql
 SELECT
    FirstName,
    LastName
@@ -34,7 +34,7 @@ WHERE IdiotId = 2;
 ```
 
 #### With CTE alternative
-```
+```sql
 with parms (tag) as (
   values ('tag1'), ('tag2'), ('tag3')
 )
@@ -45,7 +45,7 @@ from the_table t
 
 
 ### VALUES with a MERGE statement
-```
+```sql
 DECLARE @Changes TABLE(Change VARCHAR(20));
 
 MERGE INTO Idiots AS Target  
@@ -68,7 +68,7 @@ GROUP BY Change;
 ```
 
 ## Convert delimited list to rows and query with JOIN TABLE
-```
+```sql
 SELECT t.col 
 FROM   table t
 JOIN   TABLE(SELECT column_value 
