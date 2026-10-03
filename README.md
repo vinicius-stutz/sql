@@ -52,6 +52,7 @@ Oferecer acesso rápido a instruções testadas e padronizadas, reduzindo o temp
 ├── LICENSE                     # Licença MIT do projeto
 ├── README.md                   # Documentação principal e visão geral
 ├── SECURITY.md                 # Políticas e reporte de vulnerabilidades
+├── queries/                    # Consultas, inserções, updates etc
 └── tips/                       # Coleção de instruções técnicas
     ├── mongo.md                # Snippets e pipelines para MongoDB
     ├── mssql.md                # Scripts transacionais e consultas SQL Server
